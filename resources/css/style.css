@@ -1,0 +1,157 @@
+html,
+body {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: 'Helvetica', sans-serif;
+}
+
+span,
+nav {
+  color: white;
+  font-size: 1rem;
+}
+
+.container {
+  margin: auto;
+  width: 960px;
+  border: 1px solid red;  */debugging*/
+}
+
+.flex {
+  display: flex;
+}
+
+.bground-img {
+  background-image: url('../images/glasses-bg.png');
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  padding-top: 1rem;
+}
+
+.header {
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  margin-top: -10;
+  width: 100%;
+  border: 1px solid red;  */debugging*/
+}
+
+.header span {
+  padding: 0.5 0;
+  width: 100%;
+}
+
+.logo img{
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  align-content: center;
+
+}
+
+.menu {
+  padding: 1rem 2rem;
+  border: 1px solid red; */debugging*/
+
+}
+
+nav ul {
+  display: flex;
+  border: 1px solid red;   */debugging*/
+}
+
+li {
+  padding-right: 2rem;
+  border: 1px solid red;    */debugging*/
+}
+
+.pullout-container {
+  display: flex;
+  margin: auto;
+  background-color: white;
+  margin-top: 10rem;
+  height: 5rem;
+  max-width: 34rem; /*definitely not right, */
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 11rem /*definitely not right*/
+}
+
+
+.pullout-container h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+
+}
+
+.icons {
+  display: flex;
+  margin-top: 3rem;
+  align-items: flex end;
+  justify-content: center;
+  padding-right: 6rem;
+  height: 8rem;
+}
+
+.icons span {
+  color: black;
+  display: flex;
+}
+
+.exams img {
+  width: 3.5rem;
+}
+
+.custom img,
+.delivery img {
+  width: 5rem;
+}
+
+.phil-apptmt {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-around;
+}
+
+.phil-apptmt h3 {
+  background-color: cadetblue;
+  width: 10rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+}
+
+.phil-apptmt p {
+  padding-top: 1rem ;
+}
+
+.philosophy,
+.appointments {
+  width: 35%;
+}
+
+.philosophy {
+  padding-right: 5%;
+}
+
+footer {
+  display: flex;
+  background-color: azure;
+  height: 9.5rem;
+  margin: 5rem auto;
+
+}
+
+.footer {
+  display: flex;
+
+}
+
+footer span {
+  color: black;
+}
