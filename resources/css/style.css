@@ -1,7 +1,7 @@
 html,
 body {
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.4rem;
   font-family: 'Helvetica', sans-serif;
 }
 
@@ -14,7 +14,6 @@ nav {
 .container {
   margin: auto;
   width: 960px;
-  border: 1px solid red;  */debugging*/
 }
 
 
@@ -23,21 +22,21 @@ nav {
   display: flex;
 }
 
-.bground-img {
+.bground-img { <!-- not displaying properly-->
   background-image: url('../images/glasses-bg.png');
   height: 30rem;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
   padding-top: 1rem;
 }
+
 
 .header {
   background-color: cadetblue;
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  border: 1px solid red;  */debugging*/
 }
 
 .header span {
@@ -49,65 +48,77 @@ nav {
   height: 1.5rem;
   padding-left: 2rem;
   padding-right: 1rem;
-  align-content: center;
+  padding-top: 0.5rem;
+  align-items: center;
 
 }
 
 .menu {
-  padding: 1rem 2rem;
-  border: 1px solid red; */debugging*/
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
 
 }
 
 nav ul {
   display: flex;
-  border: 1px solid red;   */debugging*/
 }
 
 li {
   padding-right: 2rem;
-  border: 1px solid red;    */debugging*/
 }
 
-.pullout-container {
-  display: flex;
-  margin: auto;
-  background-color: white;
-  margin-top: 10rem;
-  height: 5rem;
-  max-width: 34rem; /*definitely not right, */
-  align-items: center;
+
+
+.pullout-container { <!-- not displaying properly-->
+  display: inline-block;
   justify-content: flex-end;
-  margin-right: 11rem /*definitely not right*/
+  margin-top: 10rem;
+  border: 1px solid red;
 }
 
 
-.pullout-container h1 {
+
+.pullout h1 {
   font-weight: bold;
   font-size: 2rem;
-  line-height: 1.2;
+  line-height: 2.4rem;
   padding: 1.5rem 5rem;
+  background-color: white;
+  border: 1px solid red;
+  margin-right: -2rem;
 
 }
 
+.icons-container { <--!not displaying properly-->
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid red;
+
+}
 .icons {
   display: flex;
-  margin-top: 3rem;
-  align-items: flex end;
-  justify-content: center;
-  padding-right: 6rem;
+  margin: 3rem;
   height: 8rem;
+  border: 1px solid red;
 }
 
 .icons span {
   color: black;
   display: flex;
+
 }
 
 .exams img {
   width: 3.5rem;
 }
 
+.exams img,
+.custom img{
+  margin-right: 6rem;
+}
 .custom img,
 .delivery img {
   width: 5rem;
@@ -116,7 +127,8 @@ li {
 .phil-apptmt {
   display: flex;
   margin-top: 3rem;
-  justify-content: space-around;
+  justify-content: center;
+  border: 1px solid red;
 }
 
 .phil-apptmt h3 {
@@ -141,6 +153,8 @@ li {
 }
 
 footer {
+  width: 960px;
+  padding: 0 4rem;
   display: flex;
   background-color: azure;
   height: 9.5rem;
@@ -150,9 +164,17 @@ footer {
 
 .footer {
   display: flex;
-
+  justify-content: flex-start;
 }
+
 
 footer span {
   color: black;
+  align-items: center;
+}
+
+@media only screen and (min-width: 960px) {
+  .mobile-nav {
+    display: none;
+  }
 }
