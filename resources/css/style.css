@@ -13,10 +13,8 @@ nav {
 
 .container {
   margin: auto;
-  width: 960px;
+  max-width: 960px;
 }
-
-
 
 .flex {
   display: flex;
@@ -27,41 +25,25 @@ nav {
   height: 30rem;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
   padding-top: 1rem;
 }
 
-.header-container {
-  display: flex;
-  align-items: flex-start;
-  width: 960px;
-}
 
-.header {
-  background-color: cadetblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
+nav {
+   background-color: cadetblue;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 0;
 
-.header span {
-  padding: 0.5 0;
-  width: 100%;
-}
-
-.logo img{
+ }
+nav img{
   height: 1.5rem;
   padding-left: 2rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
   align-items: center;
-
-}
-
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1rem;
 
 }
 
@@ -76,12 +58,13 @@ li {
 .pullout-container {
   display: flex;
   justify-content: flex-end;
-  margin-top: 10rem;
-  border: 1px solid red;
 }
 
 .pullout {
-  border: 1px solid red;
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: 5rem;
+  padding: 0.75rem 4rem;
 }
 
 
@@ -96,11 +79,15 @@ li {
 
 }
 
-.icons-container {
+.services {
   display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
   border: 1px solid red;
 
 }
@@ -113,22 +100,26 @@ li {
 
 .icons span {
   color: black;
-  display: flex;
+  display: block;
+  border: 1px solid red;
 
 }
 
-.exams img {
+.icons .paper img{
   width: 3.5rem;
+  margin-bottom: 1rem;
 }
 
-.exams img,
-.custom img{
-  margin-right: 6rem;
-}
-.custom img,
-.delivery img {
+.icons .custom img,
+.icons .delivery img {
   width: 5rem;
+  margin-right: 6rem;
+  margin-bottom: 1rem;
 }
+
+
+
+
 
 .phil-apptmt {
   display: flex;
@@ -177,4 +168,10 @@ footer {
 footer span {
   color: black;
   align-items: center;
+}
+
+@media only screen and (min-width: 960px) {
+  .mobile-nav {
+    display: none;
+  }
 }
