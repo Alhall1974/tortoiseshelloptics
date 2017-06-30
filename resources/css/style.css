@@ -1,7 +1,7 @@
 html,
 body {
   font-size: 18px;
-  line-height: 1.4rem;
+  line-height: 1.4;
   font-family: 'Helvetica', sans-serif;
 }
 
@@ -22,7 +22,7 @@ nav {
   display: flex;
 }
 
-.bground-img { <!-- not displaying properly-->
+.bground-img {
   background-image: url('../images/glasses-bg.png');
   height: 30rem;
   background-repeat: no-repeat;
@@ -30,6 +30,11 @@ nav {
   padding-top: 1rem;
 }
 
+.header-container {
+  display: flex;
+  align-items: flex-start;
+  width: 960px;
+}
 
 .header {
   background-color: cadetblue;
@@ -68,29 +73,30 @@ li {
   padding-right: 2rem;
 }
 
-
-
-.pullout-container { <!-- not displaying properly-->
-  display: inline-block;
+.pullout-container {
+  display: flex;
   justify-content: flex-end;
   margin-top: 10rem;
   border: 1px solid red;
 }
 
+.pullout {
+  border: 1px solid red;
+}
 
 
 .pullout h1 {
   font-weight: bold;
   font-size: 2rem;
-  line-height: 2.4rem;
+  line-height: 1.2;
+  border: 1px solid red;
   padding: 1.5rem 5rem;
   background-color: white;
-  border: 1px solid red;
-  margin-right: -2rem;
+  margin-right: 2rem;
 
 }
 
-.icons-container { <--!not displaying properly-->
+.icons-container {
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -171,10 +177,4 @@ footer {
 footer span {
   color: black;
   align-items: center;
-}
-
-@media only screen and (min-width: 960px) {
-  .mobile-nav {
-    display: none;
-  }
 }
