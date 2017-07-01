@@ -79,9 +79,14 @@ li {
 
 }
 
+.supporting {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+}
+
 .services {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
@@ -93,6 +98,7 @@ li {
 }
 .icons {
   display: flex;
+  flex-direction: column;
   margin: 3rem;
   height: 8rem;
   border: 1px solid red;
@@ -105,6 +111,9 @@ li {
 
 }
 
+.icons img {
+justify-content: center;
+}
 .icons .paper img{
   width: 3.5rem;
   margin-bottom: 1rem;
@@ -116,10 +125,6 @@ li {
   margin-right: 6rem;
   margin-bottom: 1rem;
 }
-
-
-
-
 
 .phil-apptmt {
   display: flex;
@@ -150,20 +155,27 @@ li {
 }
 
 footer {
-  width: 960px;
+  max-width: 960px;
   padding: 0 4rem;
   display: flex;
   background-color: azure;
   height: 9.5rem;
   margin: 5rem auto;
+  border: 1px solid red;
 
 }
 
 .footer {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  padding-left: 4rem;
+  border: 1px solid red;
 }
 
+.footer img {
+  height: 1.5rem;
+  padding-right: 1.5rem
+}
 
 footer span {
   color: black;
