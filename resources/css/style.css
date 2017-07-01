@@ -267,7 +267,6 @@ div span {
 .phil-apptmt {
   display: inline-block;
   max-width: 100%;
-  border: 1px solid red;
 }
 
 .phil-apptmt h3 {
@@ -294,8 +293,10 @@ footer {
 
 .footer {
   padding-left: 0rem;
+  justify-content: center;
 }
 
 footer img {
   padding-right: 0;
+  justify-content: center;
 }
