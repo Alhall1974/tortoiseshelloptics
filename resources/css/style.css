@@ -1,7 +1,7 @@
 html,
 body {
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.4rem;
   font-family: 'Helvetica', sans-serif;
 }
 
@@ -161,7 +161,7 @@ footer {
   padding-left: 3rem;
 }
 
-.footer img {
+footer img {
   height: 1.5rem;
   padding-right: 1.5rem
 }
@@ -175,4 +175,133 @@ footer span {
   .mobile-nav {
     display: none;
   }
+}
+
+@media only screen and (max-width: 960px) {
+
+.mobile-nav {
+  display: none
+}
+
+header {
+  height: 22rem;
+  padding-top: 0;
+}
+
+.pullout {
+  margin-top: 5rem;
+  margin-right: 0;
+  padding: 0.75em 0;
+}
+
+.pullout h1 {
+  font-size: 1.33rem;
+}
+
+@media only screen and (max-width: 615px) {
+
+header {
+  width: 100%;
+  height: 17rem;
+  padding-top: 1rem;
+  background-size: cover;
+  background-position: 20%;
+  margin-bottom: 3.77rem;
+}
+
+div span {
+  display: none;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+}
+
+.pullout-container {
+  width: 100%;
+}
+
+.pullout {
+  width: 100%;
+  margin-top: 9rem;
+}
+
+.pullout h1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.big-screen {
+  display: none;
+}
+
+.mobile-nav {
+  display: block;
+  text-align: right;
+  justify-content: space-around;
+}
+
+.supporting {
+  flex-direction: column;
+  align-items: center;
+}
+
+.service {
+  display: block;
+  margin: 0 0 1.54rem 0;
+  width: 5rem;
+  height: 7rem;
+}
+
+.service div {
+  font-size: 0.77rem;
+}
+
+
+.phil-apptmt {
+  display: inline-block;
+  max-width: 100%;
+  border: 1px solid red;
+}
+
+.phil-apptmt h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.phil-apptmt p {
+  font-size: 0.77rem;
+  padding: 1rem 2rem 4rem 0.5rem;
+}
+
+.philosophy,
+.appointments {
+  width: 100%;
+}
+
+
+footer img {
+  border: 1px solid red;
+
+}
+
+footer {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid red;
+}
+
+.footer {
+  padding-left: 0rem;
+}
+
+footer img {
+  padding-right: 0;
 }
